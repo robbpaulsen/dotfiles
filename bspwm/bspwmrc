@@ -1,0 +1,37 @@
+#! /bin/sh
+
+#pgrep -x sxhkd > /dev/null || sxhkd &
+#/home/ozymandias/.config/polybar &
+
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+sxhkd &
+/home/ozymandias/.config/polybar/./launcher.sh &
+feh --bg-fill $HOME/Pictures/WallPapers/wpaperslideshow/backiee-173601.jpg &
+
+#feh --bg-fill $HOME/.src/blue-sky/wallpapers/blue3.png
+
+#/home/ozymandias/.config/polybar/launch.sh &
+
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config normal_border_color "#b16286"
+bspc config active_border_color "#689d6a"
+bspc config focused_border_color "#83a598"
+bspc config presel-feedback_color "#d65d0e"
+bspc config focus_follows_pointer true
+bspc config pointer_follows_focus true
+#bspc config 
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+

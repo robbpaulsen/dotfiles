@@ -1,0 +1,8 @@
+[Data]
+Name=materiav2-light-fluent
+Thumbnail=/home/heimdal/.config/XfceThemeManager/meta/materiav2-light-fluent.png
+GtkTheme=materiav2-light-fluent
+Xfwm4Theme=materiav2-light-fluent
+IconTheme=Adwaita
+CursorTheme=Adwaita
+

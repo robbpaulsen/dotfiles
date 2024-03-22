@@ -1,0 +1,1 @@
+/home/heimdal/.config/zellij/plugins/zellij-forgot/target/wasm32-wasi/release/zellij_forgot.wasm: /home/heimdal/.config/zellij/plugins/zellij-forgot/src/helper.rs /home/heimdal/.config/zellij/plugins/zellij-forgot/src/main.rs

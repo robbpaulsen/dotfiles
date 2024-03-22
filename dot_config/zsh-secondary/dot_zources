@@ -1,0 +1,26 @@
+# user aliases
+if [ -f "$HOME/.aliases.zsh" ] ; then
+  . "$HOME/.aliases.zsh"
+fi
+
+# user functions
+if [ -f "$HOME/.functions.zsh" ] ; then
+  . "$HOME/.functions.zsh"
+fi
+
+# user keybindings
+if [ -f "$HOME/.key-bindings.zsh" ] ; then
+  . "$HOME/.key-bindings.zsh"
+fi
+
+# cargo environment
+if [ -f "$HOME/.cargo/env" ] ; then
+    . "$HOME/.cargo/env"
+fi
+
+# FZF environment
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
+# nvm environment
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

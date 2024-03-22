@@ -1,0 +1,77 @@
+######################################################################
+##                                                                  ##
+##                                                                  ##
+##           ██████╗  █████╗ ███████╗██╗  ██╗██████╗  ██████╗       ##
+##           ██╔══██╗██╔══██╗██╔════╝██║  ██║██╔══██╗██╔════╝       ##
+##           ██████╔╝███████║███████╗███████║██████╔╝██║            ##
+##           ██╔══██╗██╔══██║╚════██║██╔══██║██╔══██╗██║            ##
+##           ██████╔╝██║  ██║███████║██║  ██║██║  ██║╚██████╗       ##
+##           ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝       ##
+##                                                                  ##
+##                                                                  ##
+######################################################################
+
+# .bashrc
+
+iatest=$(expr index "$-" i)
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+	PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then
+			. "$rc"
+		fi
+	done
+fi
+unset rc
+
+# Disable the bell
+if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
+
+# Expand the history size
+export HISTFILESIZE=10000
+export HISTSIZE=700
+
+# Don't put duplicate lines in the history and do not add lines that start with a space
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+
+# Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
+shopt -s checkwinsize
+
+# Causes bash to append to history instead of overwriting it so if you start a new terminal, you have old session history
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+
+# Allow ctrl-S for history navigation (with ctrl-R)
+stty -ixon
+
+# Ignore case on auto-completion
+# Note: bind used instead of sticking these in .inputrc
+[[ $iatest -gt 0 ]] && bind "set completion-ignore-case on"
+
+# Show auto-completion list automatically, without double tab
+[[ $iatest -gt 0 ]] && bind "set show-all-if-ambiguous On"
+
+. "$HOME/.bash_functions"
+
+. "$HOME/.shenv"
+
+. "$HOME/.bash_aliases"
+
+eval "$(zoxide init bash)"
+
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash

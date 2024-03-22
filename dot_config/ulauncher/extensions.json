@@ -1,0 +1,72 @@
+{
+    "com.github.pascalbe-dev.ulauncher-repo-opener": {
+        "id": "com.github.pascalbe-dev.ulauncher-repo-opener",
+        "url": "https://github.com/pascalbe-dev/ulauncher-repo-opener.git",
+        "updated_at": "2024-03-17T10:45:05.226998",
+        "last_commit": "e72ec2961270c32d5b15192abbfc77020f37bbcc",
+        "last_commit_time": "2024-01-29T09:18:00"
+    },
+    "com.github.ulauncher.ulauncher-hash": {
+        "id": "com.github.ulauncher.ulauncher-hash",
+        "url": "https://github.com/Ulauncher/ulauncher-hash",
+        "updated_at": "2024-03-17T10:46:31.264294",
+        "last_commit": "237dbb3610ff04df993c3223b12df42cb7df221f",
+        "last_commit_time": "2022-09-04T14:29:55"
+    },
+    "com.github.eckhoff42.ulauncher-md-table-generator": {
+        "id": "com.github.eckhoff42.ulauncher-md-table-generator",
+        "url": "https://github.com/Eckhoff42/Ulauncher-MD-table-generator",
+        "updated_at": "2024-03-17T10:47:18.174198",
+        "last_commit": "578e4e98b297b6d2565731148c497ea8c4a6c36c",
+        "last_commit_time": "2022-05-18T14:23:21"
+    },
+    "com.github.lighttigerxiv.ulauncher-terminal-runner-extension": {
+        "id": "com.github.lighttigerxiv.ulauncher-terminal-runner-extension",
+        "url": "https://github.com/lighttigerXIV/ulauncher-terminal-runner-extension/",
+        "updated_at": "2024-03-17T10:47:38.624190",
+        "last_commit": "d6bc2157e5c0ef2f812e3051ddde334c7b485c2e",
+        "last_commit_time": "2023-05-02T22:50:12"
+    },
+    "com.github.lighttigerxiv.ulauncher-session-manager": {
+        "id": "com.github.lighttigerxiv.ulauncher-session-manager",
+        "url": "https://github.com/lighttigerXIV/ulauncher-session-manager",
+        "updated_at": "2024-03-17T10:47:49.551436",
+        "last_commit": "39218fddb79d86150c4624d96b1a162eba89c993",
+        "last_commit_time": "2023-05-23T08:14:57"
+    },
+    "com.github.trepichio.ulauncher-window-switcher": {
+        "id": "com.github.trepichio.ulauncher-window-switcher",
+        "url": "https://github.com/trepichio/ulauncher-window-switcher",
+        "updated_at": "2024-03-17T10:47:59.235683",
+        "last_commit": "5d4b221c5d59f991d3b934f36ee7c1d6bbe419c4",
+        "last_commit_time": "2022-07-17T08:25:36"
+    },
+    "com.github.hoaper.ulauncher-zh0per": {
+        "id": "com.github.hoaper.ulauncher-zh0per",
+        "url": "https://github.com/Hoaper/ulauncher-zh0per",
+        "updated_at": "2024-03-17T10:48:08.944156",
+        "last_commit": "8f6d8d88d7d4f75732f5f32bde554287d3635586",
+        "last_commit_time": "2023-01-29T12:35:09"
+    },
+    "com.github.dhelmr.ulauncher-tldr": {
+        "id": "com.github.dhelmr.ulauncher-tldr",
+        "url": "https://github.com/dhelmr/ulauncher-tldr",
+        "updated_at": "2024-03-17T10:48:18.787917",
+        "last_commit": "2e5904451bf89dfa155280dfb6fa3d45ed4cab4c",
+        "last_commit_time": "2023-07-29T11:06:30"
+    },
+    "com.github.jyvern.ulauncher-ssh": {
+        "id": "com.github.jyvern.ulauncher-ssh",
+        "url": "https://github.com/jyvern/ulauncher-ssh",
+        "updated_at": "2024-03-17T10:48:24.505959",
+        "last_commit": "47168e6ea45878787536ae5670612509f5dddced",
+        "last_commit_time": "2021-08-29T16:30:14"
+    },
+    "com.github.isacikgoz.ukill": {
+        "id": "com.github.isacikgoz.ukill",
+        "url": "https://github.com/isacikgoz/ukill",
+        "updated_at": "2024-03-21T05:43:32.312135",
+        "last_commit": "bc50d9f41d46b6813a5aeebddd15734dcdb9d8db",
+        "last_commit_time": "2019-05-28T18:30:00"
+    }
+}

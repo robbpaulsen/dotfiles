@@ -1,0 +1,8 @@
+[Data]
+Name=Jasper
+Thumbnail=/home/heimdal/.config/XfceThemeManager/meta/Jasper.png
+GtkTheme=Jasper
+Xfwm4Theme=Jasper
+IconTheme=Tela-circle
+CursorTheme=Jasper-cursors
+

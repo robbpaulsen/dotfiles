@@ -1,0 +1,8 @@
+[Data]
+Name=Midnight
+Thumbnail=/home/heimdal/.config/XfceThemeManager/meta/Midnight.png
+GtkTheme=Midnight
+Xfwm4Theme=Midnight
+IconTheme=Papirus-Dark
+CursorTheme=Adwaita
+

@@ -1,0 +1,14 @@
+﻿tuxedo
+Giorgio Tani
+LGPLv3
+themes\tuxedo\
+100
+$00e0a000
+clWindow
+$00CC5511
+clAppWorspace
+clWindowText
+12101100
+100
+4
+0

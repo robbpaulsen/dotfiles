@@ -1,0 +1,15 @@
+themes{
+    terafox {
+        bg "#1A191B"
+        fg "#e6eaea"
+        red "#e85c51"
+        green "#7aa4a1"
+        blue "#5a93aa"
+        yellow "#fda47f"
+        magenta "#ad5c7c"
+        orange "#ff8349"
+        cyan "#a1cdd8"
+        black "#254147"
+        white "#cbd9d8"
+        }
+}

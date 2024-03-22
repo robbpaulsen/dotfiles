@@ -1,0 +1,48 @@
+# Maintainer: Stefan Göbel <corky |at| subtype |dot| de>
+
+pkgname='corky'
+pkgver='2019021402'
+pkgrel='1'
+arch=('any')
+pkgdesc='Some Lua modules for the system monitor Conky.'
+url='https://gitlab.com/goeb/Corky/'
+license=('GPL3')
+depends=('conky-cairo' 'lua-lpeg')
+makedepends=( 'ldoc' )
+
+_pkgbuild_dir=${_pkgbuild_dir:-$PWD}
+_source_files=(
+   'example'
+   'lua'
+   'misc'
+   'config.ld'
+   'COPYING'
+   'Makefile'
+   'PKGBUILD'
+   'README'
+)
+
+prepare() {
+
+   local _dest="$srcdir/$pkgname"
+   local _file=''
+
+   mkdir -p "$_dest"
+
+   for _file in "${_source_files[@]}" ; do
+      cp -avx "$_pkgbuild_dir/$_file" "$_dest/"
+   done
+
+   cd "$_dest"
+   make clean
+
+}
+
+package() {
+
+   cd "$srcdir/$pkgname"
+   make install DESTDIR="$pkgdir" PREFIX='/usr'
+
+}
+
+# :indentSize=3:tabSize=3:noTabs=true:mode=shellscript:maxLineLen=78: ########

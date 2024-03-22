@@ -1,0 +1,87 @@
+{
+  "name": "flate",
+  "displayName": "Flate",
+  "description": "Dark Colored Theme for VS Code.",
+  "version": "0.7.0",
+  "publisher": "hiukky",
+  "icon": "assets/logo.png",
+  "author": {
+    "name": "Romullo",
+    "email": "developermarsh@gmail.com",
+    "url": "https://hiukky.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiukky/flate/issues"
+  },
+  "homepage": "https://github.com/hiukky/flate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiukky/flate"
+  },
+  "scripts": {
+    "build": "tsnd -r tsconfig-paths/register builder.ts"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Flate Arc Bold",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate-arc/flate.arc.bold.json"
+      },
+      {
+        "label": "Flate Arc Italic",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate-arc/flate.arc.italic.json"
+      },
+      {
+        "label": "Flate Arc",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate-arc/flate.arc.json"
+      },
+      {
+        "label": "Flate Punk Bold",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate-punk/flate.punk.bold.json"
+      },
+      {
+        "label": "Flate Punk Italic",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate-punk/flate.punk.italic.json"
+      },
+      {
+        "label": "Flate Punk",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate-punk/flate.punk.json"
+      },
+      {
+        "label": "Flate Bold",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate/flate.bold.json"
+      },
+      {
+        "label": "Flate Italic",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate/flate.italic.json"
+      },
+      {
+        "label": "Flate",
+        "uiTheme": "vs-dark",
+        "path": "./dist/flate/flate.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "ts-node-dev": "1.1.8",
+    "tsconfig-paths": "3.11.0"
+  },
+  "dependencies": {
+    "@zort/code": "0.1.0-alpha.12"
+  }
+}

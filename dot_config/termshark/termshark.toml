@@ -1,0 +1,5 @@
+[main]
+color-tsharks = ['/bin/tshark']
+last-used-tshark = '/bin/tshark'
+validated-tsharks = ['/bin/tshark']
+

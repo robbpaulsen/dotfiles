@@ -1,0 +1,98 @@
+Corky - Lua modules for Conky.
+========================================================================
+
+These are some Lua modules to be used with the system monitor Conky
+(<http://conky.sourceforge.net/>).
+
+They provide methods to draw circular and rectangular meters, and to
+show some text, using Conky's Cairo interface. Corky meters are defined
+in the Conky configuration file, editing any Lua source files is not
+required. An example configuration file is included.
+
+
+Requirements
+------------------------------------------------------------------------
+
+Lua and Cairo support has to be enabled in Conky during compilation.
+
+The LPeg Lua module (<http://www.inf.puc-rio.br/~roberto/lpeg/>) is also
+required. The Arch Linux repositories provide the `lua-lpeg` package,
+other distributions may provide a package, too. If not, it has to be
+installed manually.
+
+
+Installation
+------------------------------------------------------------------------
+
+Copy the contents of the `lua` directory to some place where Conky can
+access it, and use an appropriate `lua_load` directive in the Conky
+configuration.
+
+See <http://goeb.gitlab.io/corky/modules/corky.html> for more
+details, and check the example configuration.
+
+There is also a Makefile, which will install the modules in /usr/local/
+(unless overridden by setting a different PREFIX), but the Makefile will
+attempt to generate the documentation, which requires the ldoc command
+to be available. See the Makefile for more details. To use it, just run
+
+   make install
+
+A package for Arch Linux (or Arch Linux based distributions) may be
+built from the LOCAL sources using the provided PKGBUILD. There is also
+a PKGBUILD available in the AUR.
+
+
+Example Configuration
+------------------------------------------------------------------------
+
+A small example configuration is included in the `example` folder. From
+the top of the Corky directory tree, run:
+
+   conky -c example/conky.conf
+
+to start Conky with this configuration.
+
+
+Corky Documentation
+------------------------------------------------------------------------
+
+The HTML documentation can be built from the source using LDoc, see
+<https://github.com/stevedonovan/LDoc>. If it is installed, run
+
+   ldoc .
+
+at the top of the Corky directory tree to generate the documentation in
+the `docs` folder. The `misc` folder contains a slightly altered HTML
+template and stylesheet (both based on the official ones), to use these
+run
+
+   ldoc -l misc -s misc .
+
+An online version is available at <http://goeb.gitlab.io/corky/> (there
+is also a mirror at <http://goeb.bitbucket.io/corky/>).
+
+
+Git Repository
+------------------------------------------------------------------------
+
+Corky is available at Gitlab: <https://gitlab.com/goeb/corky/>.
+
+
+Copyright And License
+------------------------------------------------------------------------
+
+Copyright 2015-2019 Stefan Göbel - <corky |at| subtype |dot| de>
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser
+General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.

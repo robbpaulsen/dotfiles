@@ -1,0 +1,8 @@
+[Data]
+Name=materiav2-light-red
+Thumbnail=/home/heimdal/.config/XfceThemeManager/meta/materiav2-light-red.png
+GtkTheme=materiav2-light-red
+Xfwm4Theme=materiav2-light-red
+IconTheme=Adwaita
+CursorTheme=Adwaita
+

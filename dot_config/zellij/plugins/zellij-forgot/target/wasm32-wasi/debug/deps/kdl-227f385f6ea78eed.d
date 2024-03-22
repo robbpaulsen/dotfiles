@@ -1,0 +1,14 @@
+/home/heimdal/.config/zellij/plugins/zellij-forgot/target/wasm32-wasi/debug/deps/libkdl-227f385f6ea78eed.rmeta: /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/lib.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/document.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/entry.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/error.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/fmt.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/identifier.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/node.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/nom_compat.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/parser.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/value.rs
+
+/home/heimdal/.config/zellij/plugins/zellij-forgot/target/wasm32-wasi/debug/deps/kdl-227f385f6ea78eed.d: /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/lib.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/document.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/entry.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/error.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/fmt.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/identifier.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/node.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/nom_compat.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/parser.rs /home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/value.rs
+
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/lib.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/document.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/entry.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/error.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/fmt.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/identifier.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/node.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/nom_compat.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/parser.rs:
+/home/heimdal/.cargo/registry/src/index.crates.io-6f17d22bba15001f/kdl-4.6.0/src/value.rs:

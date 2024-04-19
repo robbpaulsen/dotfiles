@@ -6,11 +6,11 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=0;x=1401;y=724"/>
-      <property name="length" type="double" value="90.833333333333329"/>
+      <property name="position" type="string" value="p=6;x=1390;y=654"/>
+      <property name="length" type="double" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="icon-size" type="uint" value="45"/>
-      <property name="size" type="uint" value="47"/>
+      <property name="icon-size" type="uint" value="44"/>
+      <property name="size" type="int" value="48"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="40"/>
         <value type="int" value="41"/>
@@ -30,9 +30,9 @@
       </property>
       <property name="span-monitors" type="bool" value="false"/>
       <property name="output-name" type="string" value="DP-0"/>
-      <property name="background-style" type="uint" value="1"/>
+      <property name="background-style" type="int" value="0"/>
       <property name="background-image" type="string" value=""/>
-      <property name="background-alpha" type="int" value="100"/>
+      <property name="background-alpha" type="int" value="85"/>
       <property name="background-color" type="array">
         <value type="uint" value="56540"/>
         <value type="uint" value="56026"/>
@@ -40,14 +40,15 @@
         <value type="uint" value="65535"/>
       </property>
       <property name="background-rgba" type="array">
-        <value type="double" value="0"/>
-        <value type="double" value="0"/>
-        <value type="double" value="0"/>
-        <value type="double" value="0.8825503355704698"/>
+        <value type="double" value="0.016188888888888909"/>
+        <value type="double" value="0.056363954802259884"/>
+        <value type="double" value="0.10333333333333335"/>
+        <value type="double" value="0.90000000000000002"/>
       </property>
-      <property name="length-adjust" type="bool" value="false"/>
+      <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="1"/>
-      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="enable-struts" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -74,6 +75,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networking disabled"/>
         <value type="string" value="ethernet network connection “locallan” active"/>
         <value type="string" value="ethernet network connection “local-lan” active"/>
         <value type="string" value="drop-down terminal"/>
@@ -91,6 +93,7 @@
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="opensnitch-ui"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="qBittorrent"/>
         <value type="string" value="flameshot"/>
@@ -141,10 +144,12 @@
       <property name="launcher-icon-size" type="int" value="0"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
       <property name="position-profile-alternate" type="bool" value="true"/>
-      <property name="position-commands-alternate" type="bool" value="true"/>
-      <property name="button-icon" type="string" value="AppImageLauncher"/>
-      <property name="recent-items-max" type="int" value="10"/>
+      <property name="position-commands-alternate" type="bool" value="false"/>
+      <property name="button-icon" type="string" value="distributor-logo-ubuntu-studio"/>
+      <property name="recent-items-max" type="int" value="15"/>
       <property name="recent" type="array">
+        <value type="string" value="thorium-browser.desktop"/>
+        <value type="string" value="firefox.desktop"/>
         <value type="string" value="ulauncher.desktop"/>
         <value type="string" value="code.desktop"/>
         <value type="string" value="mu.codewith.editor.desktop"/>
@@ -157,8 +162,8 @@
       <property name="category-show-name" type="bool" value="true"/>
       <property name="launcher-show-tooltip" type="bool" value="true"/>
       <property name="launcher-show-description" type="bool" value="false"/>
-      <property name="menu-width" type="int" value="320"/>
-      <property name="menu-height" type="int" value="420"/>
+      <property name="menu-width" type="int" value="390"/>
+      <property name="menu-height" type="int" value="490"/>
       <property name="position-categories-horizontal" type="bool" value="false"/>
       <property name="position-search-alternate" type="bool" value="false"/>
       <property name="hover-switch-category" type="bool" value="true"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfcethemer" version="1.0">
-  <property name="ThemesHash" type="string" value="bfcebf8b5c3ebf02ee62fea3104931a5"/>
+  <property name="ThemesHash" type="string" value="61561fabede84eab48b8a85837ba36e9"/>
   <property name="WindowHeight" type="int" value="732"/>
   <property name="WindowWidth" type="int" value="1361"/>
   <property name="MetaTheme" type="string" value="DEADBEEF"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="displays" version="1.0">
-  <property name="ActiveProfile" type="string" value="c1cac0bbaee84216b6add9232e0dc80e2793202e"/>
+  <property name="ActiveProfile" type="string" value="70ec3280d126e63bc9842453ee2b9185f9684260"/>
   <property name="Default" type="empty">
     <property name="HDMI-0" type="string" value="Samsung Electric Company 23&quot;">
       <property name="Active" type="bool" value="true"/>
@@ -33,7 +33,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1366"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -50,8 +50,8 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="251"/>
+        <property name="X" type="int" value="2560"/>
+        <property name="Y" type="int" value="347"/>
       </property>
     </property>
   </property>
@@ -86,7 +86,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1366"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -103,8 +103,8 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="251"/>
+        <property name="X" type="int" value="2560"/>
+        <property name="Y" type="int" value="347"/>
       </property>
     </property>
   </property>
@@ -200,7 +200,7 @@
       </property>
     </property>
   </property>
-  <property name="c1cac0bbaee84216b6add9232e0dc80e2793202e" type="string" value="fedora1">
+  <property name="70ec3280d126e63bc9842453ee2b9185f9684260" type="string" value="fedora-39">
     <property name="DP-0" type="string" value="Samsung Electric Company 64&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="951124a4fc456c48e84af7479b4c8556affae3ab"/>
@@ -214,7 +214,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1366"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -231,8 +231,8 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="251"/>
+        <property name="X" type="int" value="2560"/>
+        <property name="Y" type="int" value="347"/>
       </property>
     </property>
   </property>

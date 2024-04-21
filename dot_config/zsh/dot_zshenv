@@ -97,6 +97,7 @@ export PATH
 . ~/.config/zsh/.aliases.zsh
 . ~/.config/zsh/.functions.zsh
 . ~/.config/zsh/.key-bindings.zsh
+. ~/.config/zsh/.typos.zsh
 
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 

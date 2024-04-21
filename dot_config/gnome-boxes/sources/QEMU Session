@@ -1,0 +1,5 @@
+[source]
+name=QEMU Session
+type=libvirt
+uri=qemu:///system
+save-on-quit=true

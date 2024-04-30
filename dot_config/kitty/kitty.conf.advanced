@@ -1,34 +1,53 @@
 # Advanced Kitty configuration for reference
-#
+
+include fonts.conf
+include mouse.conf
+include gral.conf
+include hotkeys.conf
+
+# Font and cursor related
+
 tab_bar_style powerline
+
 font_family      JetBrains Mono Regular
 italic_font      JetBrains Mono Italic
 bold_font        JetBrains Mono ExtraBold
 bold_italic_font JetBrains Mono ExtraBold Italic
+
 adjust_line_height  110%
+
 font_size        16.0
+
 cursor_shape     block
 cursor_blink_interval     0
 cursor_stop_blinking_after 15.0
+
 scrollback_lines 4000
 scrollback_pager less +G -R
 wheel_scroll_multiplier 5.0
 click_interval 0.5
+
+# Mouse related
 select_by_word_characters -./_~%+#
 mouse_hide_wait 3.0
+
 enabled_layouts *
 remember_window_size   yes
 initial_window_width   640
 initial_window_height  400
+
 repaint_delay    10
 visual_bell_duration 0.0
 enable_audio_bell yes
 open_url_modifiers ctrl+shift
 open_url_with default
 term xterm-256color
+
 window_border_width 2
 window_margin_width 0
 window_padding_width 0
+
+
 map ctrl+shift+v        paste_from_clipboard
 map ctrl+shift+s        paste_from_selection
 map ctrl+shift+c        copy_to_clipboard
@@ -71,7 +90,7 @@ map super+5 goto_tab 5
 map super+6 goto_tab 6
 map super+7 goto_tab 7
 map super+8 goto_tab 8
-map super+9 goto_tab 999
+map super+9 goto_tab 9
 map super+o goto_tab -1
 map super+shift+]    next_tab
 map super+shift+[     previous_tab
@@ -102,11 +121,12 @@ map super+equal    increase_font_size
 map super+minus    decrease_font_size
 map super+0 restore_font_size
 map super+backspace send_text all \x15
-hide_window_decorations yes
+map super+d pipe @text overlay vim -c 'nnoremap q :q!<CR>' -c 'map $ g_' -c ':silent! %s#\($\n\s*\)\+\%$##' '+$' -
+
 macos_thicken_font 0
 macos_option_as_alt yes
-map super+d pipe @text overlay vim -c 'nnoremap q :q!<CR>' -c 'map $ g_' -c ':silent! %s#\($\n\s*\)\+\%$##' '+$' -
-allow_remote_control yes
+
+allow_remote_control no
 active_border_color #0087ff
 inactive_border_color #cccccc
 active_tab_foreground #75715e
@@ -116,3 +136,4 @@ inactive_tab_background #272822
 include themes/Nameless.conf
 window_padding_width 10
 confirm_os_window_close 1
+hide_window_decorations yes

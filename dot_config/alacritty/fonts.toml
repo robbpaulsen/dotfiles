@@ -1,0 +1,19 @@
+[font]
+size = 16
+
+[font.normal]
+family = "Caskaydia Cove Nerd Font Mono"
+style = "Medium"
+
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
+[font.offset]
+x = 0
+y = 0

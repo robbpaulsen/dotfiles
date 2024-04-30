@@ -1,32 +1,5 @@
 import = [
-  "$XDG_CONFIG_HOME/alacritty/themes/{challenger_deep}.toml"
+  "$XDG_CONFIG_HOME/alacritty/themes/{colors}.toml"
+  "$XDG_CONFIG_HOME/alacritty/themes/{fonts}.toml"
+  "$XDG_CONFIG_HOME/alacritty/themes/{config}.toml"
 ]
-
-[shell]
-args = [
-'--login'
-]
-
-program = "zsh"
-
-[cursor]
-style = "Block"
-thickness = 0.2
-
-[scrolling]
-history = 100000
-multiplier = 3
-
-[selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
-save_to_clipboard = true
-
-[font]
-size = 16.0
-
-[font.normal]
-family = "Caskaydia Cove Nerd Font Mono"
-
-[window]
-opacity = 0.90
-blur = true

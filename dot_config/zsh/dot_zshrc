@@ -47,19 +47,20 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  aliases
   copypath
   dnf
   extract
   fd
-  gh
   git
   jq
   nmap
   themes
+  navi
 )
 
-neofetch
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
 
 .   ~/.config/zsh/.zshenv
 
@@ -75,8 +76,6 @@ neofetch
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source ~/.local/share/cargo/env
 

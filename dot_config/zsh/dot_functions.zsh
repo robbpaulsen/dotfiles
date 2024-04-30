@@ -434,6 +434,61 @@ wlannet_down()
   sudo systemctl stop wpa_supplicant.service NetworkManager.service
 }
 
+# Convert HTML file to Markdown
+html2mdown()
+{
+  pandoc -f html -t markdown  -i "$1" -o "$2".md
+}
+
+# Convert Markdown file to HTML
+mdown2html()
+{
+  pandoc -f markdown -t html -i "$1" -o "$2".html
+}
+
+# Convert Markdown file to PDF
+mdown2pdf()
+{
+    pandoc -f markdown -t pdf -i "$1" -o "$2".pdf
+}
+
+# List the font families on system
+ls_fonts() {
+  kitty +list-fonts --psnames | fzf --height=45% --layout=reverse --border --margin=3 --padding=2
+}
+
+kerneldbg() {
+  echo -e "\033[00;36m ============== Kernel Error Codes Decoding ==============\033[0m"
+  echo ""
+  echo "  0     proprietary module was loaded"
+  echo "  1     module was force loaded"
+  echo "  2     kernel running on an out of specification system"
+  echo "  3     module was force unloaded"
+  echo "  4     processor reported a Machine Check Exception (MCE)"
+  echo "  5     bad page referenced or some unexpected page flags"
+  echo "  6     taint requested by userspace application"
+  echo "  7     kernel died recently, i.e. there was an OOPS or BUG"
+  echo "  8     ACPI table overridden by user"
+  echo "  9     kernel issued warning"
+  echo " 10    staging driver was loaded"
+  echo " 11    workaround for bug in platform firmware applied"
+  echo " 12    externally-built (“out-of-tree”) module was loaded"
+  echo " 13    unsigned module was loaded"
+  echo " 14    soft lockup occurred"
+  echo " 15    kernel has been live patched"
+  echo " 16    auxiliary taint, defined for and used by distros"
+  echo " 17    kernel was built with the struct randomization plugin"
+  echo " 18    an in-kernel test has been run"
+  echo ""
+  echo -e "\033[00;36m ====================================================\033[0m"
+  echo ""
+  for i in $(seq 18); do
+    tput setaf 3
+    echo $(($i-1)) $(($(cat /proc/sys/kernel/tainted)>>($i-1)&1));
+    tput sgr 0
+  done
+}
+
  commands() {
   echo "\033[0;91m ============== ALL COMMANDS AVAILABLE =============="
   echo "weather         [city]      - Check weather"
@@ -465,8 +520,11 @@ wlannet_down()
   echo "app_search      [file]      - Search DNF installed app DB for a app/pkg"
   echo "net_up                      - Take control of your services and start your online presence manually"
   echo "wlannet_up                  - Take control of your services and start your wifi online presence manually"
-  echo "wlannet_down                - Take control of your services and stop your wifi presence manually"
-# echo ""
+  echo "wlannet_down                               - Take control of your services and stop your wifi presence manually"
+  echo "html2mdown [html file] [Md file.md]        - Convert HTML file to Markdown"
+  echo "mdown2html  [Md file] [HTML new file.html] - Convert Markdown file to HTML" 
+  echo "mdown2pdf  [Md file] [PDF file.pdf]        - Convert Markdown file to PDF"
+  echo "ls_fonts                    - List the font families on system"
 # echo ""
 # echo ""
 # echo ""

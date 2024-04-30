@@ -43,7 +43,6 @@ alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
-alias up='dot package update_all'
 
 # fix obvious typo's
 alias cd..='cd ../'

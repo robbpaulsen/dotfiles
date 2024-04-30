@@ -19,6 +19,12 @@ multiplier = 3
 style = "Block"
 thickness = 0.2
 
+opacity = 0.90
+
+blur = true
+
+multiplier = 5
+
 [selection]
 save_to_clipboard = true
 

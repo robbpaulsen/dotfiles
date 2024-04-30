@@ -1,5 +1,5 @@
 import = [
-  "$XDG_CONFIG_HOME/alacritty/themes/{colors}.toml"
-  "$XDG_CONFIG_HOME/alacritty/themes/{fonts}.toml"
-  "$XDG_CONFIG_HOME/alacritty/themes/{config}.toml"
+  "$XDG_CONFIG_HOME/alacritty/{colors}.toml",
+  "$XDG_CONFIG_HOME/alacritty/{fonts}.toml",
+  "$XDG_CONFIG_HOME/alacritty/{config}.toml"
 ]

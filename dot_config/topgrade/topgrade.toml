@@ -15,7 +15,7 @@ pre_sudo = true
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["emacs", "am", "app_man", "atom", "bob", "brew_cask", "brew_formula", "bun", "bun_packages", "certbot", "chezmoi", "chocolatey", "choosenim", "clam_av_db", "composer", "conda", "deno", "dotnet", "elan", "fossil", "gcloud", "guix", "haxelib", "helm", "home_manager", "jetpack", "julia", "juliaup", "kakoune", "helix", "krew", "lure", "macports", "mamba", "miktex", "mas", "maza", "micro", "mise", "nix", "powershell", "protonup", "pyenv", "raco", "rcm", "remotes", "restarts", "rtcl", "scoop", "sdkman", "sheldon", "snap", "sparkle", "spicetify", "stack", "stew", "tlmgr", "vagrant", "vcpkg", "waydroid", "winget", "wsl", "wsl_update", "xcodes", "yadm"]
+disable = "emacs" "am" "app_man" "atom" "bob" "brew_cask" "brew_formula" "bun" "bun_packages" "certbot" "chezmoi" "chocolatey" "choosenim" "clam_av_db" "composer" "conda" "deno" "dotnet" "elan" "fossil" "gcloud" "guix" "haxelib" "helm" "home_manager" "jetpack" "julia" "juliaup" "kakoune" "helix" "krew" "lure" "macports" "mamba" "miktex" "mas" "maza" "micro" "mise" "nix" "powershell" "protonup" "pyenv" "raco" "rcm" "remotes" "restarts" "rtcl" "scoop" "sdkman" "sheldon" "snap" "sparkle" "spicetify" "stack" "stew" "tlmgr" "vagrant" "vcpkg" "waydroid" "winget" "wsl" "wsl_update" "xcodes" "yadm"
 
 # Ignore failures for these steps
 ignore_failures = ["powershell", "emacs", "am", "app_man", "atom", "bob", "brew_cask", "brew_formula", "bun", "bun_packages", "certbot", "chezmoi", "chocolatey", "choosenim", "clam_av_db", "composer", "conda", "deno", "dotnet", "elan", "fossil", "gcloud", "guix", "haxelib", "helm", "home_manager", "jetpack", "julia", "juliaup", "kakoune", "helix", "krew", "lure", "macports", "mamba", "miktex", "mas", "maza", "micro", "mise", "nix", "powershell", "protonup", "pyenv", "raco", "rcm", "remotes", "restarts", "rtcl", "scoop", "sdkman", "sheldon", "snap", "sparkle", "spicetify", "stack", "stew", "tlmgr", "vagrant", "vcpkg", "waydroid", "winget", "wsl", "wsl_update", "xcodes", "yadm"]
@@ -39,7 +39,7 @@ ignore_failures = ["powershell", "emacs", "am", "app_man", "atom", "bob", "brew_
 display_time = true
 
 # Don't ask for confirmations (no default value)
-# assume_yes = true
+assume_yes = true
 
 # Do not ask to retry failed steps (default: false)
 no_retry = true
@@ -60,7 +60,7 @@ notify_each_step = true
 # bashit_branch = "stable"
 
 # Run specific steps - same options as the command line flag
-only = ["system", "cargo", "deb_get", "distrobox", "dkp_pacman", "firmware", "flatpak", "flutter", "gem", "github_cli_extensions", "git_repos", "gnome_shell_extensions", "pipx", "ruby_gems", "rustup", "self_update", "shell", "tldr", "toolboox", "vscode"]
+#only = ["system", "cargo", "deb_get", "distrobox", "dkp_pacman", "firmware", "flatpak", "flutter", "gem", "github_cli_extensions", "gnome_shell_extensions", "pipx", "ruby_gems", "rustup", "self_update", "shell", "tldr", "toolboox", "vscode"]
 
 # Whether to self update
 #

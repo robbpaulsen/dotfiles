@@ -1,0 +1,104 @@
+xcp -v -r /home/heimdal/.config/alacritty . &&
+	xcp -v -r /home/heimdal/.config/asciinema . &&
+	xcp -v -r /home/heimdal/.config/asciiville . &&
+	xcp -v -r /home/heimdal/.config/audacity . &&
+	xcp -v -r /home/heimdal/.config/autorandr . &&
+	xcp -v -r /home/heimdal/.config/bottom . &&
+	xcp -v -r /home/heimdal/.config/bspwm . &&
+	xcp -v -r /home/heimdal/.config/btop . &&
+	xcp -v -r /home/heimdal/.config/cava . &&
+	xcp -v -r /home/heimdal/.config/conky . &&
+	xcp /home/heimdal/.config/conky-manager2.json . &&
+	xcp /home/heimdal/.config/conky-manager.json . &&
+	xcp /home/heimdal/.config/custom-bar . &&
+	xcp -v -r /home/heimdal/.config/eww . &&
+	xcp -v -r /home/heimdal/.config/fastfetch . &&
+	xcp -v -r /home/heimdal/.config/feroxbuster . &&
+	xcp -v -r /home/heimdal/.config/findex . &&
+	xcp -v -r /home/heimdal/.config/flameshot . &&
+	xcp -v -r /home/heimdal/.config/flutter . &&
+	xcp -v -r /home/heimdal/.config/fontconfig . &&
+	xcp -v -r /home/heimdal/.config/Fritzing . &&
+	xcp -v -r /home/heimdal/.config/fzf . &&
+	xcp -v -r /home/heimdal/.config/gem . &&
+	xcp -v -r /home/heimdal/.config/Genymobile . &&
+	xcp -v -r /home/heimdal/.config/gh . &&
+	xcp -v -r /home/heimdal/.config/git . &&
+	xcp -v -r /home/heimdal/.config/glade.conf . &&
+	xcp -v -r /home/heimdal/.config/gnome-boxes . &&
+	xcp -v -r /home/heimdal/.config/gpick . &&
+	xcp -v -r /home/heimdal/.config/gtk-4.0 . &&
+	xcp -v -r /home/heimdal/.config/guake . &&
+	xcp -v -r /home/heimdal/.config/i3 . &&
+	xcp -v -r /home/heimdal/.config/i3status . &&
+	xcp -v -r /home/heimdal/.config/inkscape . &&
+	xcp -v -r /home/heimdal/.config/inlyne . &&
+	xcp -v -r /home/heimdal/.config/jgmenu . &&
+	xcp -v -r /home/heimdal/.config/jrnl . &&
+	xcp -v -r /home/heimdal/.config/jupyter . &&
+	xcp -v -r /home/heimdal/.config/kitty . &&
+	xcp -v -r /home/heimdal/.config/kitty-backup-back-up_0322_1620 . &&
+	xcp -v -r /home/heimdal/.config/Kvantum . &&
+	xcp -v -r /home/heimdal/.config/learnyoubash . &&
+	xcp -v -r /home/heimdal/.config/libvirt . &&
+	xcp -v -r /home/heimdal/.config/navi . &&
+	xcp -v -r /home/heimdal/.config/neofetch . &&
+	xcp -v -r /home/heimdal/.config/nitrogen . &&
+	xcp -v -r /home/heimdal/.config/NTInfo . &&
+	xcp -v -r /home/heimdal/.config/nvim . &&
+	xcp -v -r /home/heimdal/.config/open-bar . &&
+	xcp -v -r /home/heimdal/.config/opensnitch . &&
+	xcp -v -r /home/heimdal/.config/parallel . &&
+	xcp /home/heimdal/.config/pavucontrol.ini . &&
+	xcp -v -r /home/heimdal/.config/peazip . &&
+	xcp -v -r /home/heimdal/.config/picom . &&
+	xcp /home/heimdal/.config/picom.conf . &&
+	xcp -v -r /home/heimdal/.config/plank . &&
+	xcp -v -r /home/heimdal/.config/polybar . &&
+	xcp -v -r /home/heimdal/.config/polybar.old . &&
+	xcp -v -r /home/heimdal/.config/calcurse . &&
+	xcp -v -r /home/heimdal/.config/glow . &&
+	xcp -v -r /home/heimdal/.config/gtk-2.0 . &&
+	xcp -v -r /home/heimdal/.config/gtk-3.0 . &&
+	xcp -v -r /home/heimdal/.config/htop . &&
+	xcp -v -r /home/heimdal/.config/menus . &&
+	xcp -v -r /home/heimdal/.config/Mousepad . &&
+	xcp -v -r /home/heimdal/.config/nuclei . &&
+	xcp -v -r /home/heimdal/.config/qutebrowser . &&
+	xcp -v -r /home/heimdal/.config/Thonny . &&
+	xcp -v -r /home/heimdal/.config/Thunar . &&
+	xcp -v -r /home/heimdal/.config/vlc . &&
+	xcp -v -r /home/heimdal/.config/procs . &&
+	xcp -v -r /home/heimdal/.config/qBittorrent . &&
+	xcp -v -r /home/heimdal/.config/qt6ct . &&
+	xcp -v -r /home/heimdal/.config/QtProject . &&
+	xcp /home/heimdal/.config/QtProject.conf . &&
+	xcp -v -r /home/heimdal/.config/ranger . &&
+	xcp -v -r /home/heimdal/.config/rofi . &&
+	xcp -v -r /home/heimdal/.config/rrun . &&
+	xcp /home/heimdal/.config/screenkey.json . &&
+	xcp -v -r /home/heimdal/.config/sheldon . &&
+	xcp -v -r /home/heimdal/.config/swaylock . &&
+	xcp -v -r /home/heimdal/.config/swaync . &&
+	xcp -v -r /home/heimdal/.config/sxhkd . &&
+	xcp -v -r /home/heimdal/.config/termshark . &&
+	xcp -v -r /home/heimdal/.config/tmux-powerline . &&
+	xcp -v -r /home/heimdal/.config/topgrade . &&
+	xcp -v -r /home/heimdal/.config/ulauncher . &&
+	xcp -v -r /home/heimdal/.config/vivid . &&
+	xcp -v -r /home/heimdal/.config/wal . &&
+	xcp -v -r /home/heimdal/.config/waybar . &&
+	xcp -v -r /home/heimdal/.config/wikiman . &&
+	xcp -v -r /home/heimdal/.config/wireshark . &&
+	xcp -v -r /home/heimdal/.config/wmctrl . &&
+	xcp -v -r /home/heimdal/.config/xed . &&
+	xcp -v -r /home/heimdal/.config/xfce4 . &&
+	xcp -v -r /home/heimdal/.config/XfceThemeManager . &&
+	xcp -v -r /home/heimdal/.config/xxh . &&
+	xcp -v -r /home/heimdal/.config/yarn . &&
+	xcp -v -r /home/heimdal/.config/yazi . &&
+	xcp -v -r /home/heimdal/.config/ytfzf . &&
+	xcp -v -r /home/heimdal/.config/zellij . &&
+	xcp -v -r /home/heimdal/.config/zsh . &&
+	xcp -v -r /home/heimdal/.config/zshell-completions . &&
+	xcp -v -r /home/heimdal/.config/zsh-secondary .

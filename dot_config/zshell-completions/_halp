@@ -1,0 +1,76 @@
+#compdef halp
+
+autoload -U is-at-least
+
+_halp() {
+    typeset -A opt_args
+    typeset -a _arguments_options
+    local ret=1
+
+    if is-at-least 5.2; then
+        _arguments_options=(-s -S -C)
+    else
+        _arguments_options=(-s -C)
+    fi
+
+    local context curcontext="$curcontext" state line
+    _arguments "${_arguments_options[@]}" \
+'*--check=[Sets the argument to check]:ARG: ' \
+'-c+[Sets the configuration file]:PATH:_files' \
+'--config=[Sets the configuration file]:PATH:_files' \
+'--no-version[Disable checking the version information]' \
+'--no-help[Disable checking the help information]' \
+'-v[Enables verbose logging]' \
+'--verbose[Enables verbose logging]' \
+'-h[Print help]' \
+'--help[Print help]' \
+'-V[Print version]' \
+'--version[Print version]' \
+':cmd -- Command or binary name:' \
+":: :_halp_commands" \
+"*::: :->halp" \
+&& ret=0
+    case $state in
+    (halp)
+        words=($line[2] "${words[@]}")
+        (( CURRENT += 1 ))
+        curcontext="${curcontext%:*:*}:halp-command-$line[2]:"
+        case $line[2] in
+            (plz)
+_arguments "${_arguments_options[@]}" \
+'-m+[Sets the manual page command to run]:MAN_CMD: ' \
+'--man-cmd=[Sets the manual page command to run]:MAN_CMD: ' \
+'--cheat-sh-url=[Use a custom URL for cheat.sh]:URL: ' \
+'--eg-url=[Use a custom provider URL for \`eg\` pages]:URL: ' \
+'--cheat-url=[Use a custom URL for cheat sheets]:URL: ' \
+'-p+[Sets the pager to use]:PAGER: ' \
+'--pager=[Sets the pager to use]:PAGER: ' \
+'--no-pager[Disables the pager]' \
+'-h[Print help]' \
+'--help[Print help]' \
+':cmd -- Command or binary name:' \
+&& ret=0
+;;
+        esac
+    ;;
+esac
+}
+
+(( $+functions[_halp_commands] )) ||
+_halp_commands() {
+    local commands; commands=(
+'plz:Get additional help' \
+    )
+    _describe -t commands 'halp commands' commands "$@"
+}
+(( $+functions[_halp__plz_commands] )) ||
+_halp__plz_commands() {
+    local commands; commands=()
+    _describe -t commands 'halp plz commands' commands "$@"
+}
+
+if [ "$funcstack[1]" = "_halp" ]; then
+    _halp "$@"
+else
+    compdef _halp halp
+fi

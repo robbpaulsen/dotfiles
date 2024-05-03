@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>cm_runterm</icon>
+	<name>Summon Terminal</name>
+	<submenu></submenu>
+	<unique-id>1703823264510277-1</unique-id>
+	<command>for f in %F; do if [ -d &quot;$f&quot; ]; then exo-open --working-directory &quot;$f&quot; --launch TerminalEmulator; elif [ -z &quot;$default&quot; ]; then default=1; exo-open --launch TerminalEmulator; fi done</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>kr_comparedirs</icon>
+	<name>Compare Files</name>
+	<submenu></submenu>
+	<unique-id>1703823398428677-3</unique-id>
+	<command>meld %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<text-files/>
+</action>
+<action>
+	<icon>user-red-home</icon>
+	<name>thunar as root</name>
+	<submenu></submenu>
+	<unique-id>1703823332314174-2</unique-id>
+	<command>pkexec --user root --keep-cwd thunar</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
